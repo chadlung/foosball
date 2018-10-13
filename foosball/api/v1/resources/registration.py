@@ -15,10 +15,12 @@ class RegistrationResource(object):
         name = req.media.get('name')
         table_num = req.media.get('table')
         color = req.media.get('color')
+        resp.status = falcon.HTTP_200
 
         # Check if name already exists
         if name not in PLAYERS:
             Interactions.new_registration_entry(name)
+            resp.status = falcon.HTTP_201
 
         if table_num not in GAME_TABLES:
             # The table num doesn't exist
@@ -28,4 +30,3 @@ class RegistrationResource(object):
                 table_num, name, color)
 
         resp.media = {"status": status}
-        resp.status = falcon.HTTP_201

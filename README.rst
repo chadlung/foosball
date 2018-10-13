@@ -92,6 +92,12 @@ JSON Schema enforced.
 
     {"status": "WAITING"}
 
+If the name exists and this is a table change the HTTP response is:
+
+**Response:**
+
+**HTTP/1.0 200 Ok**
+
 There are three status values: WAITING, COMPLETED, STARTED
 
 **Record a goal:**

@@ -46,8 +46,6 @@ class Interactions(object):
         GAME_TABLES[table_num]['last_to_score'] = color
         GAME_TABLES[table_num]['datetime_last_goal'] = \
             Interactions.get_datetime()
-        player1 = GAME_TABLES[table_num]['yellow']
-        player2 = GAME_TABLES[table_num]['black']
 
         # If anyone is at 5 points the game is over
         if yellow_score == 5:
