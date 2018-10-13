@@ -1,0 +1,27 @@
+{
+  "title": "Registration",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 15
+    },
+    "table": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "color": {
+      "type": "string",
+      "enum": [
+        "black",
+        "yellow"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "table",
+    "color"
+  ]
+}

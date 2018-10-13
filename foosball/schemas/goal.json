@@ -1,0 +1,21 @@
+{
+  "title": "Goal",
+  "type": "object",
+  "properties": {
+    "table": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "color": {
+      "type": "string",
+      "enum": [
+        "black",
+        "yellow"
+      ]
+    }
+  },
+  "required": [
+    "table",
+    "color"
+  ]
+}
