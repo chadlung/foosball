@@ -174,7 +174,7 @@ This call will fetch the version number of the service.
 
 ::
 
-    curl -X POST http://127.0.0.1:8080/api/v1/version -v
+    curl -X GET http://127.0.0.1:8080/api/v1/version -v
 
 **Response:**
 
